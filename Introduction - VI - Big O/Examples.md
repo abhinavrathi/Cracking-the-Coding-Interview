@@ -45,7 +45,7 @@ The run time is in O(n) since the code visits all n nodes.
 
 ### Example 10
 
-The run time in in O(<\u221a>n<\u221a>)
+The run time in in O(&radic;n)
 
 ### Example 11
 
