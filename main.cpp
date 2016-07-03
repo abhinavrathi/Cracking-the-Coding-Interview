@@ -1,9 +1,9 @@
 #include <iostream>
 #include <vector>
-//#include "AdditionalProblems/*.hpp"
+#include "AdditionalProblems/Additional_main.hpp"
 using namespace std;
 int main(){
-	string dummy;
+	Additional_main AM;
 	int choice;
 	do{
 		cout<<"\n=========\nMAIN MENU\n=========\n";
@@ -68,7 +68,7 @@ int main(){
 				break;
 			case 18: cout<<"\nRelevant Information is posted as Various Notes on GitHub Repository!\n";
 				break;
-			case 19: 
+			case 19: AM.init();
 				break;
 			default:cout<<"\nIllegal Choice!\n";	
 		}
