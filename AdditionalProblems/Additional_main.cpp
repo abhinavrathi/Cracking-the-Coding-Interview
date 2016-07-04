@@ -5,11 +5,13 @@
 #include "IterativePermutation.hpp"
 #include "RecursivePermutation.hpp"
 #include "SortStringList.hpp"
+#include "MathIdentity.hpp"
 using namespace std;
 void Additional_main::init(){
 	IterativePermutation IP;
 	RecursivePermutation RP;
 	SortStringList SSL;
+	MathIdentity MI;
 	int choice;
 	do{
 		cout<<"\n===================\nADDITIONAL PROBLEMS\n===================\n";
@@ -36,7 +38,7 @@ void Additional_main::init(){
 			case 3: SSL.input();
 				SSL.sort();
 				break;
-			case 4: 
+			case 4: MI.find();
 				break;
 			case 5: 
 				break;
