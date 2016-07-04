@@ -9,6 +9,7 @@
 #include "MatchPermutation.hpp"
 #include "RansomNote.hpp"
 #include "ExpandingArrayMedian.hpp"
+#include "CommonElements.hpp"
 using namespace std;
 void Additional_main::init(){
 	IterativePermutation IP;
@@ -18,6 +19,7 @@ void Additional_main::init(){
 	MatchPermutation MP;
 	RansomNote RN;
 	ExpandingArrayMedian EAM;
+	CommonElements CE;
 	int choice;
 	do{
 		cout<<"\n===================\nADDITIONAL PROBLEMS\n===================\n";
@@ -54,7 +56,8 @@ void Additional_main::init(){
 				break;
 			case 7: EAM.median();
 				break;
-			case 8: 
+			case 8: CE.input();
+				CE.display_common();
 				break;
 			default:cout<<"\nIllegal Choice!\n";	
 		}
