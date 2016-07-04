@@ -4,10 +4,12 @@
 #include "Additional_main.hpp"
 #include "IterativePermutation.hpp"
 #include "RecursivePermutation.hpp"
+#include "SortStringList.hpp"
 using namespace std;
 void Additional_main::init(){
 	IterativePermutation IP;
 	RecursivePermutation RP;
+	SortStringList SSL;
 	int choice;
 	do{
 		cout<<"\n===================\nADDITIONAL PROBLEMS\n===================\n";
@@ -31,7 +33,8 @@ void Additional_main::init(){
 			case 2: RP.input();
 				RP.display_permutation();
 				break;
-			case 3: 
+			case 3: SSL.input();
+				SSL.sort();
 				break;
 			case 4: 
 				break;
