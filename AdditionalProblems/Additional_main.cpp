@@ -3,9 +3,11 @@
 #include <iostream>
 #include "Additional_main.hpp"
 #include "IterativePermutation.hpp"
+#include "RecursivePermutation.hpp"
 using namespace std;
 void Additional_main::init(){
 	IterativePermutation IP;
+	RecursivePermutation RP;
 	int choice;
 	do{
 		cout<<"\n===================\nADDITIONAL PROBLEMS\n===================\n";
@@ -26,7 +28,8 @@ void Additional_main::init(){
 			case 1: IP.input();
 				IP.display_permutation();
 				break;
-			case 2: 
+			case 2: RP.input();
+				RP.display_permutation();
 				break;
 			case 3: 
 				break;
