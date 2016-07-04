@@ -7,6 +7,7 @@
 #include "SortStringList.hpp"
 #include "MathIdentity.hpp"
 #include "MatchPermutation.hpp"
+#include "RansomNote.hpp"
 using namespace std;
 void Additional_main::init(){
 	IterativePermutation IP;
@@ -14,6 +15,7 @@ void Additional_main::init(){
 	SortStringList SSL;
 	MathIdentity MI;
 	MatchPermutation MP;
+	RansomNote RN;
 	int choice;
 	do{
 		cout<<"\n===================\nADDITIONAL PROBLEMS\n===================\n";
@@ -45,7 +47,8 @@ void Additional_main::init(){
 			case 5: MP.input();
 				MP.find_permutation();
 				break;
-			case 6: 
+			case 6: RN.input();
+				RN.display();
 				break;
 			case 7: 
 				break;
