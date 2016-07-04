@@ -8,6 +8,7 @@
 #include "MathIdentity.hpp"
 #include "MatchPermutation.hpp"
 #include "RansomNote.hpp"
+#include "ExpandingArrayMedian.hpp"
 using namespace std;
 void Additional_main::init(){
 	IterativePermutation IP;
@@ -16,6 +17,7 @@ void Additional_main::init(){
 	MathIdentity MI;
 	MatchPermutation MP;
 	RansomNote RN;
+	ExpandingArrayMedian EAM;
 	int choice;
 	do{
 		cout<<"\n===================\nADDITIONAL PROBLEMS\n===================\n";
@@ -50,7 +52,7 @@ void Additional_main::init(){
 			case 6: RN.input();
 				RN.display();
 				break;
-			case 7: 
+			case 7: EAM.median();
 				break;
 			case 8: 
 				break;
