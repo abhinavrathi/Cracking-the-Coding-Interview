@@ -6,12 +6,14 @@
 #include "RecursivePermutation.hpp"
 #include "SortStringList.hpp"
 #include "MathIdentity.hpp"
+#include "MatchPermutation.hpp"
 using namespace std;
 void Additional_main::init(){
 	IterativePermutation IP;
 	RecursivePermutation RP;
 	SortStringList SSL;
 	MathIdentity MI;
+	MatchPermutation MP;
 	int choice;
 	do{
 		cout<<"\n===================\nADDITIONAL PROBLEMS\n===================\n";
@@ -40,7 +42,8 @@ void Additional_main::init(){
 				break;
 			case 4: MI.find();
 				break;
-			case 5: 
+			case 5: MP.input();
+				MP.find_permutation();
 				break;
 			case 6: 
 				break;
