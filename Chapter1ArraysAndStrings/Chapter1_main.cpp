@@ -3,9 +3,11 @@
 #include <iostream>
 #include "Chapter1_main.hpp"
 #include "Problem_1_Is_Unique.hpp"
+#include "Problem_2_Check_Permutation.hpp"
 using namespace std;
 void Chapter1_main::init(){
 	Problem_1_Is_Unique P1;
+	Problem_2_Check_Permutation P2;
 	int choice;
 	do{
 		cout<<"\n=============================\nCHAPTER 1. ARRAYS AND STRINGS\n=============================\n";
@@ -31,7 +33,12 @@ void Chapter1_main::init(){
 				else
 					cout<<"The string does NOT have unique characters.\n";
 				break;
-			case 2: 
+			case 2: P2.input();
+				cout<<"\nOUTPUT -> ";
+				if(P2.check_permutation())
+					cout<<"The two strings are permutations of each other.\n";
+				else
+					cout<<"The two strings are NOT permutations of each other.\n";
 				break;
 			case 3: 
 				break;
