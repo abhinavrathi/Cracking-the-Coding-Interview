@@ -2,8 +2,10 @@
 
 #include <iostream>
 #include "Chapter1_main.hpp"
+#include "Problem_1_Is_Unique.hpp"
 using namespace std;
 void Chapter1_main::init(){
+	Problem_1_Is_Unique P1;
 	int choice;
 	do{
 		cout<<"\n=============================\nCHAPTER 1. ARRAYS AND STRINGS\n=============================\n";
@@ -22,7 +24,12 @@ void Chapter1_main::init(){
 		switch(choice){
 			case -1:cout<<"\nGoing back to Main Menu!\n";
 				break;
-			case 1: 
+			case 1: P1.input();
+				cout<<"\nOUTPUT -> ";
+				if(P1.is_unique())
+					cout<<"The string has unique characters.\n";
+				else
+					cout<<"The string does NOT have unique characters.\n";
 				break;
 			case 2: 
 				break;
