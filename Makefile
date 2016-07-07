@@ -1,6 +1,6 @@
 CC=g++
 CFLAGS=-c
-SOURCES=main.cpp $(wildcard Introduction-VI-BigO/*.cpp) $(wildcard AdditionalProblems/*.cpp)
+SOURCES=main.cpp $(wildcard Introduction-VI-BigO/*.cpp) $(wildcard AdditionalProblems/*.cpp) $(wildcard Chapter1ArraysAndStrings/*.cpp)
 OBJECTS=$(SOURCES:.cpp=.o)
 EXECUTABLE=run
 

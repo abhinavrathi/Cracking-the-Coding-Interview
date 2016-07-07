@@ -1,9 +1,11 @@
 #include <iostream>
 #include <vector>
 #include "AdditionalProblems/Additional_main.hpp"
+#include "Chapter1ArraysAndStrings/Chapter1_main.hpp"
 using namespace std;
 int main(){
 	Additional_main AM;
+	Chapter1_main C1M;
 	int choice;
 	do{
 		cout<<"\n=========\nMAIN MENU\n=========\n";
@@ -32,7 +34,7 @@ int main(){
 		switch(choice){
 			case -1:cout<<"\nProgram will now exit!\n\n";
 				break;
-			case 1: 
+			case 1: C1M.init();
 				break;
 			case 2: 
 				break;
