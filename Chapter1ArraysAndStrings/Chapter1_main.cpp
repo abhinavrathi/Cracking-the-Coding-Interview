@@ -8,6 +8,7 @@
 #include "Problem_4_Palindrome_Permutation.hpp"
 #include "Problem_5_One_Away.hpp"
 #include "Problem_6_String_Compression.hpp"
+#include "Problem_7_Rotate_Matrix.hpp"
 using namespace std;
 void Chapter1_main::init(){
 	Problem_1_Is_Unique P1;
@@ -16,6 +17,7 @@ void Chapter1_main::init(){
 	Problem_4_Palindrome_Permutation P4;
 	Problem_5_One_Away P5;
 	Problem_6_String_Compression P6;
+	Problem_7_Rotate_Matrix P7;
 	int choice;
 	do{
 		cout<<"\n=============================\nCHAPTER 1. ARRAYS AND STRINGS\n=============================\n";
@@ -68,7 +70,10 @@ void Chapter1_main::init(){
 			case 6: P6.input();
 				cout<<"\nOUTPUT -> The modified string is : "<<P6.compress()<<"\n";
 				break;
-			case 7: 
+			case 7: P7.input();
+				cout<<"\nOUTPUT -> The rotated matrix is :\n";
+				P7.rotate_90();
+				cout<<"\n";
 				break;
 			case 8: 
 				break;
