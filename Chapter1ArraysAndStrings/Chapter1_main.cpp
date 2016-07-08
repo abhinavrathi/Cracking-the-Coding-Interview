@@ -5,11 +5,13 @@
 #include "Problem_1_Is_Unique.hpp"
 #include "Problem_2_Check_Permutation.hpp"
 #include "Problem_3_URLify.hpp"
+#include "Problem_4_Palindrome_Permutation.hpp"
 using namespace std;
 void Chapter1_main::init(){
 	Problem_1_Is_Unique P1;
 	Problem_2_Check_Permutation P2;
 	Problem_3_URLify P3;
+	Problem_4_Palindrome_Permutation P4;
 	int choice;
 	do{
 		cout<<"\n=============================\nCHAPTER 1. ARRAYS AND STRINGS\n=============================\n";
@@ -45,7 +47,12 @@ void Chapter1_main::init(){
 			case 3: P3.input();
 				P3.urlify();
 				break;
-			case 4: 
+			case 4: P4.input();
+				cout<<"\nOUTPUT -> ";
+				if(P4.palin_permutation())
+					cout<<"The string is a palindrome permutation.\n";
+				else
+					cout<<"The string is NOT a palindrome permutation.\n";
 				break;
 			case 5: 
 				break;
