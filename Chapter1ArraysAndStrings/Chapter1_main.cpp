@@ -7,6 +7,7 @@
 #include "Problem_3_URLify.hpp"
 #include "Problem_4_Palindrome_Permutation.hpp"
 #include "Problem_5_One_Away.hpp"
+#include "Problem_6_String_Compression.hpp"
 using namespace std;
 void Chapter1_main::init(){
 	Problem_1_Is_Unique P1;
@@ -14,6 +15,7 @@ void Chapter1_main::init(){
 	Problem_3_URLify P3;
 	Problem_4_Palindrome_Permutation P4;
 	Problem_5_One_Away P5;
+	Problem_6_String_Compression P6;
 	int choice;
 	do{
 		cout<<"\n=============================\nCHAPTER 1. ARRAYS AND STRINGS\n=============================\n";
@@ -63,7 +65,8 @@ void Chapter1_main::init(){
 				else
 					cout<<"The two strings are NOT one (or zero) edits away.\n";
 				break;
-			case 6: 
+			case 6: P6.input();
+				cout<<"\nOUTPUT -> The modified string is : "<<P6.compress()<<"\n";
 				break;
 			case 7: 
 				break;
