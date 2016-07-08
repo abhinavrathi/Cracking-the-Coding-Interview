@@ -6,12 +6,14 @@
 #include "Problem_2_Check_Permutation.hpp"
 #include "Problem_3_URLify.hpp"
 #include "Problem_4_Palindrome_Permutation.hpp"
+#include "Problem_5_One_Away.hpp"
 using namespace std;
 void Chapter1_main::init(){
 	Problem_1_Is_Unique P1;
 	Problem_2_Check_Permutation P2;
 	Problem_3_URLify P3;
 	Problem_4_Palindrome_Permutation P4;
+	Problem_5_One_Away P5;
 	int choice;
 	do{
 		cout<<"\n=============================\nCHAPTER 1. ARRAYS AND STRINGS\n=============================\n";
@@ -54,7 +56,12 @@ void Chapter1_main::init(){
 				else
 					cout<<"The string is NOT a palindrome permutation.\n";
 				break;
-			case 5: 
+			case 5: P5.input();
+				cout<<"\nOUTPUT -> ";
+				if(P5.one_edit())
+					cout<<"The two strings are one (or zero) edits away.\n";
+				else
+					cout<<"The two strings are NOT one (or zero) edits away.\n";
 				break;
 			case 6: 
 				break;
