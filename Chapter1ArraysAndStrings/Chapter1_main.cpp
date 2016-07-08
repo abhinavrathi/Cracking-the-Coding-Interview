@@ -4,10 +4,12 @@
 #include "Chapter1_main.hpp"
 #include "Problem_1_Is_Unique.hpp"
 #include "Problem_2_Check_Permutation.hpp"
+#include "Problem_3_URLify.hpp"
 using namespace std;
 void Chapter1_main::init(){
 	Problem_1_Is_Unique P1;
 	Problem_2_Check_Permutation P2;
+	Problem_3_URLify P3;
 	int choice;
 	do{
 		cout<<"\n=============================\nCHAPTER 1. ARRAYS AND STRINGS\n=============================\n";
@@ -40,7 +42,8 @@ void Chapter1_main::init(){
 				else
 					cout<<"The two strings are NOT permutations of each other.\n";
 				break;
-			case 3: 
+			case 3: P3.input();
+				P3.urlify();
 				break;
 			case 4: 
 				break;
