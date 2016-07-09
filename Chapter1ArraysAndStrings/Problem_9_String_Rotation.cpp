@@ -11,8 +11,11 @@ void Problem_9_String_Rotation::input(){
 	getline(cin,s2);
 };
 bool Problem_9_String_Rotation::string_rotation(){
-	s2+=s2;
-	return isSubstring(s1,s2);
+	if(s1.length()==s2.length()){
+		s2+=s2;
+		return isSubstring(s1,s2);
+	}
+	return false;
 };
 bool Problem_9_String_Rotation::isSubstring(string a,string b){
 	return b.find(a)!=string::npos;
