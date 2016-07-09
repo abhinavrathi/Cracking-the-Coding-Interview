@@ -10,6 +10,7 @@
 #include "Problem_6_String_Compression.hpp"
 #include "Problem_7_Rotate_Matrix.hpp"
 #include "Problem_8_Zero_Matrix.hpp"
+#include "Problem_9_String_Rotation.hpp"
 using namespace std;
 void Chapter1_main::init(){
 	Problem_1_Is_Unique P1;
@@ -20,6 +21,7 @@ void Chapter1_main::init(){
 	Problem_6_String_Compression P6;
 	Problem_7_Rotate_Matrix P7;
 	Problem_8_Zero_Matrix P8;
+	Problem_9_String_Rotation P9;
 	int choice;
 	do{
 		cout<<"\n=============================\nCHAPTER 1. ARRAYS AND STRINGS\n=============================\n";
@@ -80,7 +82,12 @@ void Chapter1_main::init(){
 				cout<<"\nOUTPUT -> The modified matrix is :\n";
 				P8.zero_matrix();
 				break;
-			case 9: 
+			case 9: P9.input();
+				cout<<"\nOUTPUT -> ";
+				if(P9.string_rotation())
+					cout<<"The second string is a rotation of the first.\n";
+				else
+					cout<<"The second string is NOT a rotation of the first.\n";
 				break;
 			default:cout<<"\nIllegal Choice!\n";	
 		}
