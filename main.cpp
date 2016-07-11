@@ -2,10 +2,12 @@
 #include <vector>
 #include "AdditionalProblems/Additional_main.hpp"
 #include "Chapter1ArraysAndStrings/Chapter1_main.hpp"
+#include "Chapter2LinkedLists/Chapter2_main.hpp"
 using namespace std;
 int main(){
 	Additional_main AM;
 	Chapter1_main C1M;
+	Chapter2_main C2M;
 	int choice;
 	do{
 		cout<<"\n=========\nMAIN MENU\n=========\n";
@@ -36,7 +38,7 @@ int main(){
 				break;
 			case 1: C1M.init();
 				break;
-			case 2: 
+			case 2: C2M.init();
 				break;
 			case 3: 
 				break;
