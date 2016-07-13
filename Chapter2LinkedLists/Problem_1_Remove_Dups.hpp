@@ -6,8 +6,7 @@
 #include "Linked_List.hpp"
 using namespace std;
 class Problem_1_Remove_Dups:public Linked_List{
-private://node *head;
-	node* remove_duplicate(node *head);
+private:node* remove_duplicate(node *head);
 public:	void remove();
 };
 
