@@ -3,9 +3,11 @@
 #include <iostream>
 #include "Chapter2_main.hpp"
 #include "Problem_1_Remove_Dups.hpp"
+//#include "Problem_2_Return_Kth_To_Last.hpp"
 using namespace std;
 void Chapter2_main::init(){
 	Problem_1_Remove_Dups P1;
+	//Problem_2_Return_Kth_To_Last P2;
 	int choice;
 	do{
 		cout<<"\n=======================\nCHAPTER 2. LINKED LISTS\n=======================\n";
@@ -31,7 +33,10 @@ void Chapter2_main::init(){
 				P1.display();
 				cout<<"\n";
 				break;
-			case 2: 
+			case 2: /*P2.input();
+				cout<<"\nOriginal List : ";
+				P2.display();
+				P2.process();*/
 				break;
 			case 3: 
 				break;

@@ -1,21 +1,14 @@
 // Created by Abhinav Rathi on 07/11/2016
 
+#ifndef Problem_1_Remove_Dups_hpp
+#define Problem_1_Remove_Dups_hpp
+
+#include "Linked_List.hpp"
 using namespace std;
-struct node{
-	int data;
-	node *next;
-	node(){
-		next=NULL;
-	}
-	node(int d){
-		data=d;
-		next=NULL;
-	}
-};
-class Problem_1_Remove_Dups{
-private:node *head;
+class Problem_1_Remove_Dups:public Linked_List{
+private://node *head;
 	node* remove_duplicate(node *head);
-public:	void input();
-	void remove();
-	void display();
+public:	void remove();
 };
+
+#endif
