@@ -1,7 +1,6 @@
 // Created by Abhinav Rathi on 07/12/2016
 
 #include <iostream>
-#include <unordered_map>
 #include "Problem_2_Return_Kth_To_Last.hpp"
 using namespace std;
 void Problem_2_Return_Kth_To_Last::process(){

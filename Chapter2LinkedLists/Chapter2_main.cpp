@@ -4,10 +4,12 @@
 #include "Chapter2_main.hpp"
 #include "Problem_1_Remove_Dups.hpp"
 #include "Problem_2_Return_Kth_To_Last.hpp"
+//#include "Problem_3_Delete_Middle_Node.hpp"
 using namespace std;
 void Chapter2_main::init(){
 	Problem_1_Remove_Dups P1;
 	Problem_2_Return_Kth_To_Last P2;
+	//Problem_3_Delete_Middle_Node P3;
 	int choice;
 	do{
 		cout<<"\n=======================\nCHAPTER 2. LINKED LISTS\n=======================\n";
@@ -38,7 +40,16 @@ void Chapter2_main::init(){
 				P2.display();
 				P2.process();
 				break;
-			case 3: 
+			case 3: /*P3.input();
+				cout<<"\nOriginal List : ";
+				P3.display();
+				if(P3.remove_middle()!=-1){
+					cout<<"\n\nModified List : ";
+					P3.display();
+				}
+				else
+					cout<<"\n\nOUTPUT -> The list is too short for the operation!";
+				cout<<"\n";*/
 				break;
 			case 4: 
 				break;
