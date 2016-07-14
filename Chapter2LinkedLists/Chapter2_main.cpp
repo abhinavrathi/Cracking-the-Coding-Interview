@@ -7,6 +7,7 @@
 #include "Problem_3_Delete_Middle_Node.hpp"
 #include "Problem_4_Partition.hpp"
 #include "Problem_5_Sum_Lists.hpp"
+#include "Problem_6_Palindrome.hpp"
 using namespace std;
 void Chapter2_main::init(){
 	Problem_1_Remove_Dups P1;
@@ -14,6 +15,7 @@ void Chapter2_main::init(){
 	Problem_3_Delete_Middle_Node P3;
 	Problem_4_Partition P4;
 	Problem_5_Sum_Lists P5;
+	Problem_6_Palindrome P6;
 	int choice;
 	do{
 		cout<<"\n=======================\nCHAPTER 2. LINKED LISTS\n=======================\n";
@@ -65,7 +67,13 @@ void Chapter2_main::init(){
 				break;
 			case 5: P5.process();
 				break;
-			case 6: 
+			case 6: P6.input();
+				cout<<"\nOriginal List : ";
+				P6.display();
+				if(P6.check_palindrome())
+					cout<<"\n\nOUTPUT -> The list is a palindrome!\n";
+				else
+					cout<<"\n\nOUTPUT -> The list is NOT a palindrome!\n";
 				break;
 			case 7: 
 				break;
