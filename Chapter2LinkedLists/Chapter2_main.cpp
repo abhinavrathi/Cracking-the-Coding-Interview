@@ -6,12 +6,14 @@
 #include "Problem_2_Return_Kth_To_Last.hpp"
 #include "Problem_3_Delete_Middle_Node.hpp"
 #include "Problem_4_Partition.hpp"
+#include "Problem_5_Sum_Lists.hpp"
 using namespace std;
 void Chapter2_main::init(){
 	Problem_1_Remove_Dups P1;
 	Problem_2_Return_Kth_To_Last P2;
 	Problem_3_Delete_Middle_Node P3;
 	Problem_4_Partition P4;
+	Problem_5_Sum_Lists P5;
 	int choice;
 	do{
 		cout<<"\n=======================\nCHAPTER 2. LINKED LISTS\n=======================\n";
@@ -61,7 +63,7 @@ void Chapter2_main::init(){
 				P4.display();
 				cout<<"\n";
 				break;
-			case 5: 
+			case 5: P5.process();
 				break;
 			case 6: 
 				break;
