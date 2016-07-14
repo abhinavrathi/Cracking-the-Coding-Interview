@@ -9,6 +9,7 @@
 #include "Problem_5_Sum_Lists.hpp"
 #include "Problem_6_Palindrome.hpp"
 #include "Problem_7_Intersection.hpp"
+#include "Problem_8_Loop_Detection.hpp"
 using namespace std;
 void Chapter2_main::init(){
 	Problem_1_Remove_Dups P1;
@@ -18,7 +19,8 @@ void Chapter2_main::init(){
 	Problem_5_Sum_Lists P5;
 	Problem_6_Palindrome P6;
 	Problem_7_Intersection P7;
-	int choice;
+	Problem_8_Loop_Detection P8;
+	int choice,val;
 	do{
 		cout<<"\n=======================\nCHAPTER 2. LINKED LISTS\n=======================\n";
 		cout<<"Press 1 for 2.1 Remove Dups\n";
@@ -82,7 +84,14 @@ void Chapter2_main::init(){
 				else
 					cout<<"\nOUTPUT -> The two lists do NOT intersect each other!\n";
 				break;
-			case 8: 
+			case 8: P8.input();
+				cout<<"\nOriginal List : ";
+				P8.display();
+				val=P8.loop_detect();
+				if(val!=-1)
+					cout<<"\n\nOUTPUT -> The start of the loop is "<<val<<"!\n";
+				else
+					cout<<"\n\nOUTPUT -> The list does NOT have a loop!\n";
 				break;
 			default:cout<<"\nIllegal Choice!\n";	
 		}
