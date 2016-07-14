@@ -8,6 +8,7 @@
 #include "Problem_4_Partition.hpp"
 #include "Problem_5_Sum_Lists.hpp"
 #include "Problem_6_Palindrome.hpp"
+#include "Problem_7_Intersection.hpp"
 using namespace std;
 void Chapter2_main::init(){
 	Problem_1_Remove_Dups P1;
@@ -16,6 +17,7 @@ void Chapter2_main::init(){
 	Problem_4_Partition P4;
 	Problem_5_Sum_Lists P5;
 	Problem_6_Palindrome P6;
+	Problem_7_Intersection P7;
 	int choice;
 	do{
 		cout<<"\n=======================\nCHAPTER 2. LINKED LISTS\n=======================\n";
@@ -75,7 +77,10 @@ void Chapter2_main::init(){
 				else
 					cout<<"\n\nOUTPUT -> The list is NOT a palindrome!\n";
 				break;
-			case 7: 
+			case 7: if(P7.check_intersection())
+					cout<<"\nOUTPUT -> The two lists intersect each other!\n";
+				else
+					cout<<"\nOUTPUT -> The two lists do NOT intersect each other!\n";
 				break;
 			case 8: 
 				break;
