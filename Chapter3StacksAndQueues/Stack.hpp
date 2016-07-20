@@ -3,6 +3,7 @@
 #ifndef Stack_hpp
 #define Stack_hpp
 
+#include <iostream>
 using namespace std;
 struct stack_node{
 	int data;
@@ -18,6 +19,9 @@ struct stack_node{
 class Stack{
 private:stack_node *myStack;
 public:	Stack(){
+		myStack=NULL;
+	}
+	void clear(){
 		myStack=NULL;
 	}
 	void push(int d);

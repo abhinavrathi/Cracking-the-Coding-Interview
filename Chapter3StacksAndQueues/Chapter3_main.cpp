@@ -2,40 +2,38 @@
 
 #include <iostream>
 #include "Chapter3_main.hpp"
+#include "Problem_2_Stack_Min.hpp"
 using namespace std;
 void Chapter3_main::init(){
-	int ch,data;
+	Problem_2_Stack_Min P2;
+	int choice;
 	do{
-		cout<<"\n==========\nSTACK MENU\n==========\n";
-		cout<<"Press 1 to Push Item\n";
-		cout<<"Press 2 to Pop Item\n";
-		cout<<"Press 3 to Peek Item\n";
-		cout<<"Press 4 to determine whether Stack is Empty\n";
-		cout<<"Press 0 to Exit\n";
-		cin>>ch;
-		switch(ch){
-			case 0:	break;
-			case 1:	cin>>data;
-				obj.push(data);
+		cout<<"\n======================\nSTACKS AND QUEUES MENU\n======================\n";
+		cout<<"Press 1 for 3.1 Three In One\n";
+		cout<<"Press 2 for 3.2 Stack Min\n";
+		cout<<"Press 3 for 3.3 Stack of Plates\n";
+		cout<<"Press 4 for 3.4 My Queue\n";
+		cout<<"Press 5 for 3.5 Sort Stack\n";
+		cout<<"Press 6 for 3.6 Animal Shelter\n";
+		cout<<"Press -1 to Exit\n";
+		cout<<"Enter your choice : ";
+		cin>>choice;
+		switch(choice){
+			case -1:cout<<"\nGoing back to Main Menu!\n";
 				break;
-			case 2: data=obj.pop();
-				if(data==INT_MIN)
-					cout<<"\nStack is Empty!";
-				else
-					cout<<data;
+			case 1: 
 				break;
-			case 3:	data=obj.peek();
-				if(data==INT_MIN)
-					cout<<"\nStack is Empty!";
-				else
-					cout<<data;
+			case 2: P2.menu();
 				break;
-			case 4:	if(obj.isEmpty())
-					cout<<"\nStack is Empty!";
-				else
-					cout<<"\nStack is NOT Empty!";
+			case 3: 
+				break;
+			case 4: 
+				break;
+			case 5: 
+				break;
+			case 6: 
 				break;
 			default:cout<<"\nIllegal Choice!\n";
 		}
-	}while(ch!=0);
+	}while(choice!=-1);
 };

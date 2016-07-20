@@ -1,6 +1,5 @@
 // Created by Abhinav Rathi on 07/14/2016
 
-#include <iostream>
 #include "Stack.hpp"
 using namespace std;
 void Stack::push(int d){
