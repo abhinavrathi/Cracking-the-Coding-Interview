@@ -18,7 +18,7 @@ void Problem_2_Stack_Min::menu(){
 		cout<<"Enter your choice : ";
 		cin>>ch;
 		switch(ch){
-			case 0:	break;
+			case -1:break;
 			case 1:	cout<<"\nEnter Data : ";
 				cin>>data;
 				arr.push(data);

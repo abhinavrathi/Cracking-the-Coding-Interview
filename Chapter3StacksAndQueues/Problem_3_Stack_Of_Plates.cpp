@@ -17,7 +17,7 @@ void Problem_3_Stack_Of_Plates::menu(){
 		cout<<"Enter your choice : ";
 		cin>>ch;
 		switch(ch){
-			case 0:	break;
+			case -1:break;
 			case 1:	cout<<"\nEnter Data : ";
 				cin>>data;
 				if(no==-1||plates.size()==0||plates[no].size()==limit){
