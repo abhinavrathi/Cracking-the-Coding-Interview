@@ -55,6 +55,7 @@ void Problem_3_Stack_Of_Plates::menu(){
 						plates[q].erase(plates[q].begin()+r);
 						plates[q].push_back(plates[q+1][0]);
 						plates[q+1].erase(plates[q+1].begin());
+						r=0;
 						q++;
 					}
 				}
