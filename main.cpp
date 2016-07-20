@@ -3,11 +3,13 @@
 #include "AdditionalProblems/Additional_main.hpp"
 #include "Chapter1ArraysAndStrings/Chapter1_main.hpp"
 #include "Chapter2LinkedLists/Chapter2_main.hpp"
+#include "Chapter3StacksAndQueues/Chapter3_main.hpp"
 using namespace std;
 int main(){
 	Additional_main AM;
 	Chapter1_main C1M;
 	Chapter2_main C2M;
+	Chapter3_main C3M;
 	int choice;
 	do{
 		cout<<"\n=========\nMAIN MENU\n=========\n";
@@ -40,7 +42,7 @@ int main(){
 				break;
 			case 2: C2M.init();
 				break;
-			case 3: 
+			case 3: C3M.init();
 				break;
 			case 4: 
 				break;
