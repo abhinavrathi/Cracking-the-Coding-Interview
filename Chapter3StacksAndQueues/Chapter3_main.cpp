@@ -3,9 +3,11 @@
 #include <iostream>
 #include "Chapter3_main.hpp"
 #include "Problem_2_Stack_Min.hpp"
+#include "Problem_3_Stack_Of_Plates.hpp"
 using namespace std;
 void Chapter3_main::init(){
 	Problem_2_Stack_Min P2;
+	Problem_3_Stack_Of_Plates P3;
 	int choice;
 	do{
 		cout<<"\n======================\nSTACKS AND QUEUES MENU\n======================\n";
@@ -25,7 +27,7 @@ void Chapter3_main::init(){
 				break;
 			case 2: P2.menu();
 				break;
-			case 3: 
+			case 3: P3.menu();
 				break;
 			case 4: 
 				break;
