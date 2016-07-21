@@ -2,13 +2,16 @@
 
 #include <iostream>
 #include "Chapter3_main.hpp"
+#include "Problem_1_Three_In_One.hpp"
 #include "Problem_2_Stack_Min.hpp"
 #include "Problem_3_Stack_Of_Plates.hpp"
 #include "Problem_4_My_Queue.hpp"
 #include "Problem_5_Sort_Stack.hpp"
 #include "Problem_6_Animal_Shelter.hpp"
+#include "Problem_1_Three_In_One.hpp"
 using namespace std;
 void Chapter3_main::init(){
+	Problem_1_Three_In_One P1;
 	Problem_2_Stack_Min P2;
 	Problem_3_Stack_Of_Plates P3;
 	Problem_4_My_Queue P4;
@@ -29,7 +32,7 @@ void Chapter3_main::init(){
 		switch(choice){
 			case -1:cout<<"\nGoing back to Main Menu!\n";
 				break;
-			case 1: 
+			case 1: P1.menu();
 				break;
 			case 2: P2.menu();
 				break;
